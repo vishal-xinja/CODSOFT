@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<style>
+.beep{
+    background-color: #66ffcc;
+   border: #66ffcc;
+   color: #0099ff;
+}
+.beep:hover{
+    color:	
+#8D18AB;
+}
+
+</style>
+<body>
+    <header>
+       
+        <h1>Vishal Mishra</h1>
+
+        <section class="menu">
+            <ul class="menu_list">
+                <li> <input type="button" class="beep" value="Home">   </li>
+               
+           
+                <li ><input type="button" class="beep" value="Product"></li>
+               
+                <li><input type="button" class="beep" value="About me"></li>
+            </button>
+                <li><input type="button" class="beep" value="Contact me"></li>
+            </ul>
+     
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+           
+        </section>
+    </header>
+
+    <section class="main">
+        <section class="left">
+            <p class="title">Internship at CodSoft</p>
+            <p class="msg">Web development is the process of creating and maintaining websites using technologies like HTML, PHP, and JavaScript, as well as with content management systems (CMS). Not to be confused with web design, web development is concerned with the technical aspects of a website. Web design is concerned with the look and feel of the website.</p>
+            <button class="cta">Learn more</button>
+        </section>
+        <section class="right">
+            <img src="images/beemarrie_developer_marketing_computer_strategy_deda1786-e5df-4461-957a-01d758880ac0-768x768.jpg" alt="web development">
+        </section>
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click',() => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+    
+</body>
+</html>
